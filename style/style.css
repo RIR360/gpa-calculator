@@ -1,4 +1,31 @@
-.outbox{height: 400px; width: 600px; border-style: solid; border-width: 10px; position: relative; font-family: Arial, Helvetica, sans-serif; font-size: 25px; left: 625px; top: 250px;}
-.form-button{position:absolute; font-size: 25px; left: 250px;}
-.form-group{margin: 15px;}
-.resultbox{border-style: solid; border-width: 10px; height: 150px; width: 150px; text-align: center; font-size:30px; font-family: Arial, Helvetica, sans-serif; position: absolute; left: 400px;  bottom: 200px;}
+.outbox{
+    height: 400px;
+     width: 600px;
+     border-style: solid;
+     border-width: 10px;
+     position: relative;
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: 25px;
+     left: 625px;
+     top: 250px;
+}
+ .form-button{
+    position:absolute;
+     font-size: 25px;
+     left: 250px;
+}
+ .form-group{
+    margin: 15px;
+}
+ .resultbox{
+    border-style: solid;
+     border-width: 10px;
+     height: 150px;
+     width: 150px;
+     text-align: center;
+     font-size:30px;
+     font-family: Arial, Helvetica, sans-serif;
+     position: absolute;
+     left: 400px;
+     bottom: 200px;
+}
