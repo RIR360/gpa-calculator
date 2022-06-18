@@ -1,8 +1,8 @@
 .container{
      width: 500px;
-     height: 450px;
+     height: 350px;
      border-style: solid;
-     border-width: 5px;
+     border-width: 9px;
      position: absolute;
      margin-inline-start: 400px;
      font-family: 'Courier New', Courier, monospace;
@@ -12,11 +12,11 @@
 }
 .Box{
     border-style: solid;
-    border-width: 5px;
-    height: 150px;
-    width: 150px;
-    left: 80px;
-    bottom: 240px;
+    border-width: 9px;
+    height: 120px;
+    width: 120px;
+    left: 120px;
+    bottom: 170px;
     margin-inline-start: 200px;
     position: absolute;
     text-align: center;
