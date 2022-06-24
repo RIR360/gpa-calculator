@@ -9,7 +9,7 @@ window.onload = (e) => {
         e.preventDefault();
         
         // show alert to the user
-        // alert("You clicked Calculate");
+        alert("You clicked Calculate");
         
         var course1 = form['course1'].value;
         var course2 = form['course2'].value;
