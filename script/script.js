@@ -1,4 +1,9 @@
 
+var CREDIT = 18;
+var PER_COURSE = 3;
+var PER_LAB = 1.5;
+
+
 window.onload = (e) => {
 
     var form = document.querySelector("#main-form");
@@ -7,9 +12,6 @@ window.onload = (e) => {
 
         // stop form from refreshing the page
         e.preventDefault();
-        
-        // show alert to the user
-        // alert("You clicked Calculate");
         
         var course1 = form['course1'].value;
         var course2 = form['course2'].value;
