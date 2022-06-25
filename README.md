@@ -1,5 +1,7 @@
 # GPA Calculator 1.0
-University Grade Point Average calculator. National University Bangladesh
+![image](https://github.com/RIR360/gpa-calculator/blob/main/images/cover-image-v1.jpg?raw=true)
+<br/>
+University Grade Point Average calculator. National University Bangladesh.
 
 # GPA Calculation Process
 Step by step guide through the GPA calculation process.
