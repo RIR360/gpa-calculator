@@ -18,3 +18,5 @@ Step by step guide through the GPA calculation process.
   ` Final_GPA = weighted_result / total_credits`
 
 * Final_GPA is the desired gpa of the student!
+
+# You Name
