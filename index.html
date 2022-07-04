@@ -4,50 +4,171 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/bootstrap.css">
     <link rel="stylesheet" href="style/style.css">
     <title>GPA Calculator</title>
 </head>
-<body>
 
+<body class="bg-info">
+
+    <nav>
+        <div class="container-fluid py-lg-3 bg-primary text-white">
+            <ul class="d-sm-inline-flex"> 
+            <a href="#" class="navbar-brand"></a>
+            <img src="https://upload.wikimedia.org/wikipedia/en/5/58/National_University%2C_Bangladesh_crest.svg" height="48" width="50" alt="logo" />
+            <div class="fs-3 fw-bold">GPA Calculator</div> 
+            <div style="text-align: right;" class="d-flex align-items-center">(National University, Bangladesh)</div>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="contributors" class="bg-light p-2 rounded">
+        <a href="https://github.com/rir360" title="Rejwan Islam Rizvy" class="mb-2">
+            <img src="https://github.com/rir360.png" alt="Rejwan Islam Rizvy">
+        </a>
+        <a href="https://github.com/NazmulHasanNihal" title="Nazmul Hasan Nihal" class="mb-2">
+            <img src="https://github.com/NazmulHasanNihal.png" alt="NazmulHasanNihal">
+        </a>
+        <a href="https://github.com/SSP420" title="Sharmila Saha Puja">
+            <img src="https://github.com/SSP420.png" alt="Sharmila Saha Puja">
+        </a>
+    </div>
+
+    
     <main>
-        <div class="container">
-        <form action="">
+        <div class="container-fluid py-4">
+            <div class="container">
 
-            <div class="form-group">
-               <label for="course A" style="color: red"><b>Course A</b></label>
-                <input name="course A" type="number">
-            </div>
-            <div class="form-group">
-                <label for="course B" style="color: red"><b>Course B</b></label>
-                <input name="course B" type="number">
-            </div>
-            <div class="form-group">
-                <label for="course C" style="color: red"><b>Course C</b></label>
-                <input name="course C" type="number">
-            </div>
-            <div class="form-group">
-                <label for="course D" style="color: red"><b>Course D</b></label>
-                <input name="course D" type="number">
-            </div>
-            <div class="form-group">
-                <label for="course E" style="color: red"><b>Course E</b></label>
-                <input name="course E" type="number">
-            </div>
-            <div class="form-group">
-                <label for="Lab A" style="color: black"><b>&nbsp;&nbsp;&nbsp;Lab A</b></label>
-                <input name="Lab A" type="number">
-            </div>
-            <div class="form-group">
-                <label for="Lab B" style="color: black"><b>&nbsp;&nbsp;&nbsp;Lab B</b></label>
-                <input name="Lab B" type="number">
-            </div>
-            <div class="form-group">
-                <div class="Box"><br/><b>You Got!</b><br/><br/><b>_ _ _ </b></div>
-                <div class="button">
-                <input name="calculate" type="submit" value="Calculate GPA">
-            </div>
+                <form id="main-form" class="m-auto p-4 col-lg-8 rounded row bg-light" action="">
 
-        </form>
+                    <div class="col-md">
+
+                        <h3 class="text-dark">Enter Your Grades</h3>
+
+                        <div class="input-group py-1">
+                            <label for="course1" class="input-group-text">Course 1</label>
+                            <select name="course1" class="form-control" required>
+                                <option value="" selected>Choose Your Grade</option>
+                                <option value="4.00">A+</option>
+                                <option value="3.75">A</option>
+                                <option value="3.50">A-</option>
+                                <option value="3.25">B+</option>
+                                <option value="3.00">B</option>
+                                <option value="2.75">B-</option>
+                                <option value="2.50">C+</option>
+                                <option value="2.25">C</option>
+                                <option value="2.00">D</option>
+                            </select>
+                        </div>
+                        <div class="input-group py-1">
+                            <label for="course2" class="input-group-text">Course 2</label>
+                            <select name="course2" class="form-control" required>
+                                <option value="" selected>Choose Your Grade</option>
+                                <option value="4.00">A+</option>
+                                <option value="3.75">A</option>
+                                <option value="3.50">A-</option>
+                                <option value="3.25">B+</option>
+                                <option value="3.00">B</option>
+                                <option value="2.75">B-</option>
+                                <option value="2.50">C+</option>
+                                <option value="2.25">C</option>
+                                <option value="2.00">D</option>
+                            </select>
+                        </div>
+                        <div class="input-group py-1">
+                            <label for="course3" class="input-group-text">Course 3</label>
+                            <select name="course3" class="form-control" required>
+                                <option value="" selected>Choose Your Grade</option>
+                                <option value="4.00">A+</option>
+                                <option value="3.75">A</option>
+                                <option value="3.50">A-</option>
+                                <option value="3.25">B+</option>
+                                <option value="3.00">B</option>
+                                <option value="2.75">B-</option>
+                                <option value="2.50">C+</option>
+                                <option value="2.25">C</option>
+                                <option value="2.00">D</option>
+                            </select>
+                        </div>
+                        <div class="input-group py-1">
+                            <label for="course4" class="input-group-text">Course 4</label>
+                            <select name="course4" class="form-control" required>
+                                <option value="" selected>Choose Your Grade</option>
+                                <option value="4.00">A+</option>
+                                <option value="3.75">A</option>
+                                <option value="3.50">A-</option>
+                                <option value="3.25">B+</option>
+                                <option value="3.00">B</option>
+                                <option value="2.75">B-</option>
+                                <option value="2.50">C+</option>
+                                <option value="2.25">C</option>
+                                <option value="2.00">D</option>
+                            </select>
+                        </div>
+                        <div class="input-group py-1">
+                            <label for="course5" class="input-group-text">Course 5</label>
+                            <select name="course5" class="form-control" required>
+                                <option value="" selected>Choose Your Grade</option>
+                                <option value="4.00">A+</option>
+                                <option value="3.75">A</option>
+                                <option value="3.50">A-</option>
+                                <option value="3.25">B+</option>
+                                <option value="3.00">B</option>
+                                <option value="2.75">B-</option>
+                                <option value="2.50">C+</option>
+                                <option value="2.25">C</option>
+                                <option value="2.00">D</option>
+                            </select>
+                        </div>
+                        <div class="input-group py-1">
+                            <label for="lab1" class="input-group-text">Lab 1</label>
+                            <select name="lab1" class="form-control" required>
+                                <option value="" selected>Choose Your Grade</option>
+                                <option value="4.00">A+</option>
+                                <option value="3.75">A</option>
+                                <option value="3.50">A-</option>
+                                <option value="3.25">B+</option>
+                                <option value="3.00">B</option>
+                                <option value="2.75">B-</option>
+                                <option value="2.50">C+</option>
+                                <option value="2.25">C</option>
+                                <option value="2.00">D</option>
+                            </select>
+                        </div>
+                        <div class="input-group py-1">
+                            <label for="lab2" class="input-group-text">Lab 2</label>
+                            <select name="lab2" class="form-control" required>
+                                <option value="" selected>Choose Your Grade</option>
+                                <option value="4.00">A+</option>
+                                <option value="3.75">A</option>
+                                <option value="3.50">A-</option>
+                                <option value="3.25">B+</option>
+                                <option value="3.00">B</option>
+                                <option value="2.75">B-</option>
+                                <option value="2.50">C+</option>
+                                <option value="2.25">C</option>
+                                <option value="2.00">D</option>
+                            </select>
+                        </div>
+                        <div class="d-grid py-2">
+                            <input class="btn btn-dark" type="submit" value="Calculate">
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-5 d-flex align-items-center justify-content-center flex-column py-5">
+                        <strong>You Got</strong>
+                        <span class="display-1" id="final-gpa">0.00</span>
+                    </div>
+
+                </form>
+
+                <div class="text-center my-2 text-light">
+                    Credit Per Course: <strong>3.00</strong> | 
+                    Credit Per Lab: <strong>1.50</strong>
+                </div>
+
+            </div>
         </div>
     </main>
 

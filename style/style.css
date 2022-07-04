@@ -1,34 +1,15 @@
-.container{
-     width: 500px;
-     height: 350px;
-     border-style: solid;
-     border-width: 9px;
-     position: absolute;
-     margin-inline-start: 400px;
-     font-family: 'Courier New', Courier, monospace;
+
+#contributors {
+   position: absolute;
+   right: 10px;
+   top: 100px;
 }
-.form-group{
-    margin: 15px;
+
+#contributors a {
+   display: block;
 }
-.Box{
-    border-style: solid;
-    border-width: 9px;
-    height: 120px;
-    width: 120px;
-    left: 120px;
-    bottom: 170px;
-    margin-inline-start: 200px;
-    position: absolute;
-    text-align: center;
-    font-size: 25px;
-    text-transform: 25px;
-    padding: 5px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-.button{
-    margin: 5px;
-    position: absolute;
-    text-indent: 10px;
-    font-size: 25px;
-    left: 200px;
+
+#contributors img {
+   width: 40px;
+   border-radius: 50%;
 }
