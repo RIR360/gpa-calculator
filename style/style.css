@@ -1,14 +1,9 @@
-#contributors {
-   position: absolute;
-   right: 10px;
-   top: 100px;
-}
-
-#contributors a {
-   display: block;
-}
 
 #contributors img {
    width: 40px;
    border-radius: 50%;
+}
+
+.main-bg {
+   background: rgba(28,133,191,1);
 }
