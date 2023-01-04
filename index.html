@@ -34,6 +34,7 @@
 
                 <div class="text-center mb-3 text-light">
                     <h1>NU GPA Calculator</h1>
+                    <p>Calculate your GPA from your grade points only. (This is estimated GPA)</p>
                 </div>
 
                 <form id="main-form" class="m-auto p-4 col-lg-8 rounded row bg-white" action="">
@@ -41,8 +42,11 @@
                     <div class="col-md">
 
                         <h3 class="text-dark">Enter Your Grades</h3>
+                        <div class="py-1 mb-1 border-bottom">
+                            Major or Minor Course
+                            <small class="text-secondary">(3.00)</small>
+                        </div>
                         <div id="course-container">
-                            <div class="py-1 mb-1 border-bottom">Major or Minor Course</div>
                             <div class="input-group py-1">
                                 <input type="text" class="form-control" placeholder="Course Name">
                                 <select name="course1" class="form-control" required>
@@ -62,8 +66,11 @@
                         <div class="d-grid py-2">
                             <input class="btn btn-primary" type="button" value="+ Add Course" onclick="add_input('course')">
                         </div>
+                        <div class="py-1 mb-1 border-bottom">
+                            Lab Course
+                            <small class="text-secondary">(1.50)</small>
+                        </div>
                         <div id="lab-container">
-                            <div class="py-1 mb-1 border-bottom">Lab Course</div>
                             <div class="input-group py-1">
                                 <input type="text" class="form-control" placeholder="Lab Course Name">
                                 <select name="lab1" class="form-control" required>
@@ -80,6 +87,7 @@
                                 </select>
                             </div>
                         </div>
+
                         <div class="d-grid py-2">
                             <input class="btn btn-primary" type="button" value="+ Add Lab Course" onclick="add_input('lab')">
                         </div>
@@ -101,19 +109,14 @@
                         <a href="https://github.com/NazmulHasanNihal" title="Nazmul Hasan Nihal" class="mb-2">
                             <img src="https://github.com/NazmulHasanNihal.png" alt="NazmulHasanNihal">
                         </a>
-                        <a href="https://github.com/SSP420" title="Sharmila Saha Puja">
-                            <img src="https://github.com/SSP420.png" alt="Sharmila Saha Puja">
-                        </a>
                     </div>
 
                 </form>
 
                 <div class="text-center my-2 text-light">
-                    Credit Per Course: <strong>3.00</strong> | 
-                    Credit Per Lab: <strong>1.50</strong>
-                    <br>
                     All Copyrights Reserved
                 </div>
+
             </div>
         </div>
     </main>

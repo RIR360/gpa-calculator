@@ -1,6 +1,5 @@
-var CREDIT = 18;
-var CREDIT_PER_COURSE = 3;
-var CREDIT_PER_LAB = 1.5;
+const CREDIT_PER_COURSE = 3;
+const CREDIT_PER_LAB = 1.5;
 
 function add_input(type) {
     if (type == "course") {
@@ -54,28 +53,36 @@ function add_input(type) {
 
 window.onload = (e) => {
 
-    var form = document.querySelector("#main-form");
+    const form = document.querySelector("#main-form");
+    const course_container = document.querySelector("#course-container");
+    const lab_container = document.querySelector("#lab-container");
+    const output = document.querySelector("#final-gpa");
 
-    form.addEventListener("submit", (e) => {
+    form.addEventListener("change", (e) => {
 
         // stop form from refreshing the page
         e.preventDefault();
-        
-        var course1 = parseFloat(form['course1'].value * CREDIT_PER_COURSE);
-        var course2 = parseFloat(form['course2'].value * CREDIT_PER_COURSE);
-        var course3 = parseFloat(form['course3'].value * CREDIT_PER_COURSE);
-        var course4 = parseFloat(form['course4'].value * CREDIT_PER_COURSE);
-        var course5 = parseFloat(form['course5'].value * CREDIT_PER_COURSE);
 
-        var lab1 = parseFloat(form['lab1'].value * CREDIT_PER_LAB);
-        var lab2 = parseFloat(form['lab2'].value * CREDIT_PER_LAB);
+        // get all input
+        let courses = course_container.querySelectorAll(".input-group");
+        let lab_courses = lab_container.querySelectorAll(".input-group");
 
-        var result =(course1 + course2 + course3 + course4 + course5 + lab1 + lab2) /(CREDIT);
-        result= result.toFixed(2);
+        let course_sum = 0;
+        let lab_course_sum = 0;
+
+        courses.forEach(course => {
+            course_sum += parseFloat(course.querySelector("select").value * CREDIT_PER_COURSE)
+        })
+
+        lab_courses.forEach(lab => {
+            lab_course_sum += parseFloat(lab.querySelector("select").value * CREDIT_PER_LAB)
+        })
+
+        let total_credit = parseFloat((courses.length * CREDIT_PER_COURSE) + (lab_courses.length * CREDIT_PER_LAB));
+        let result = (course_sum + lab_course_sum) / (total_credit);
 
         // showing output
-        document.querySelector("#final-gpa").innerHTML = result;
-    });
+        output.innerHTML = result.toFixed(2);
 
-
+    })
 }
